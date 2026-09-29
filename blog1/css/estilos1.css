@@ -1,0 +1,751 @@
+/* ==================================================
+                    GENERAL
+================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f1f3f6;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding: 50px 0;
+}
+
+article {
+    scroll-margin-top: 100px;
+}
+
+
+/* ==================================================
+                    CABECERA
+================================================== */
+
+.header-blog {
+    background: #ffffff;
+    padding: 35px 0 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: bold;
+    color: #075985;
+}
+
+.logo i {
+    color: #0ea5e9;
+    margin-right: 8px;
+}
+
+.logo small {
+    font-size: 13px;
+    background: #0ea5e9;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.descripcion-blog {
+    margin: 5px 0 0 47px;
+    color: #777;
+}
+
+.redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    margin-left: 8px;
+
+    border-radius: 50%;
+
+    background: #075985;
+    color: white;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.redes a:hover {
+    background: #0ea5e9;
+    transform: translateY(-3px);
+}
+
+
+/* ==================================================
+                    MENU
+================================================== */
+
+.menu-blog {
+    background: #075985;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-blog .nav-link {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 18px !important;
+    transition: .3s;
+}
+
+.menu-blog .nav-link:hover {
+    background: #0ea5e9;
+    color: white;
+}
+
+
+/* ==================================================
+                    POST
+================================================== */
+
+.post {
+    background: white;
+    margin-bottom: 40px;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, .07);
+}
+
+.post-imagen {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.post-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-principal .post-imagen {
+    height: 430px;
+}
+
+.categoria {
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+
+    background: #0ea5e9;
+    color: white;
+
+    padding: 8px 15px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    border-radius: 3px;
+}
+
+.post-contenido {
+    padding: 35px;
+}
+
+.post-contenido h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    color: #12304a;
+    font-weight: bold;
+}
+
+.post-contenido h2 {
+    font-size: 30px;
+    color: #12304a;
+    margin-bottom: 15px;
+}
+
+.post-contenido p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.introduccion {
+    font-size: 19px !important;
+    color: #444 !important;
+}
+
+.datos-post {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin: 18px 0 25px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #eee;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+.datos-post i {
+    color: #0ea5e9;
+    margin-right: 5px;
+}
+
+
+/* ==================================================
+                    MINI TIMELINE
+================================================== */
+
+.mini-timeline {
+    border-left: 3px solid #0ea5e9;
+    padding-left: 25px;
+    margin-top: 30px;
+}
+
+.mini-timeline > div {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.mini-timeline > div::before {
+    content: "";
+
+    width: 13px;
+    height: 13px;
+
+    background: #0ea5e9;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    left: -33px;
+    top: 4px;
+}
+
+.mini-timeline strong {
+    color: #075985;
+    font-size: 20px;
+}
+
+.mini-timeline p {
+    margin: 5px 0;
+}
+
+
+/* ==================================================
+                    PERSONAJES
+================================================== */
+
+.personaje {
+    background: #f7fafc;
+
+    border: 1px solid #e4e9ee;
+
+    border-radius: 6px;
+
+    padding: 25px;
+
+    height: 100%;
+
+    text-align: center;
+}
+
+.personaje i {
+    font-size: 45px;
+    color: #0ea5e9;
+}
+
+.personaje h4 {
+    color: #075985;
+    margin-top: 15px;
+}
+
+.personaje p {
+    font-size: 14px;
+}
+
+
+/* ==================================================
+                    ETIQUETA
+================================================== */
+
+.etiqueta {
+    display: inline-block;
+
+    color: #0ea5e9;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ==================================================
+                    LUGARES
+================================================== */
+
+.lugares {
+    margin-top: 30px;
+}
+
+.lugares div > div {
+    background: #f5f9fc;
+
+    border: 1px solid #e1e9ef;
+
+    padding: 18px;
+
+    border-radius: 6px;
+
+    color: #075985;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.lugares div > div:hover {
+    background: #e0f2fe;
+    transform: translateX(5px);
+}
+
+.lugares i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+/* ==================================================
+                    BOLIVIA
+================================================== */
+
+.bolivia-imagen {
+    height: 250px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #075985,
+            #0ea5e9
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.bolivia-texto {
+    color: white;
+
+    font-size: 70px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.bolivia-texto strong {
+    font-size: 35px;
+}
+
+
+/* ==================================================
+                    CONEXION
+================================================== */
+
+.conexion {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    background: #f7fafc;
+
+    padding: 25px;
+
+    margin-top: 30px;
+
+    border-radius: 8px;
+}
+
+.conexion div {
+    text-align: center;
+}
+
+.conexion i {
+    display: block;
+
+    font-size: 35px;
+
+    color: #0ea5e9;
+
+    margin-bottom: 8px;
+}
+
+.conexion span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #075985;
+}
+
+.conexion b {
+    font-size: 25px;
+    color: #0ea5e9;
+}
+
+
+/* ==================================================
+                    TABLA
+================================================== */
+
+.tabla-responsive {
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+.table thead {
+    background: #075985;
+    color: white;
+}
+
+.table th,
+.table td {
+    padding: 14px;
+    vertical-align: middle;
+}
+
+
+/* ==================================================
+                    CONCLUSION
+================================================== */
+
+.conclusion {
+    border-top: 5px solid #0ea5e9;
+}
+
+
+/* ==================================================
+                    FUENTES
+================================================== */
+
+.fuentes {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.fuentes a {
+    padding: 15px;
+
+    background: #f5f9fc;
+
+    border: 1px solid #e0e6eb;
+
+    text-decoration: none;
+
+    color: #075985;
+
+    border-radius: 5px;
+
+    transition: .3s;
+}
+
+.fuentes a:hover {
+    background: #e0f2fe;
+    padding-left: 25px;
+}
+
+
+/* ==================================================
+                    SIDEBAR
+================================================== */
+
+.sidebar {
+    position: sticky;
+    top: 90px;
+}
+
+.sidebar-box {
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 4px 18px rgba(0,0,0,.06);
+}
+
+.sidebar-box h3 {
+    color: #12304a;
+
+    font-size: 22px;
+
+    margin: 0;
+}
+
+.sidebar-box p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.separador {
+    width: 50px;
+    height: 3px;
+
+    background: #0ea5e9;
+
+    margin: 15px 0 20px;
+}
+
+
+/* ==================================================
+                    CATEGORIAS
+================================================== */
+
+.categorias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categorias li {
+    border-bottom: 1px solid #eee;
+}
+
+.categorias a {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 13px 0;
+
+    text-decoration: none;
+
+    color: #555;
+
+    transition: .3s;
+}
+
+.categorias a:hover {
+    color: #0ea5e9;
+    padding-left: 5px;
+}
+
+.categorias span {
+    background: #e0f2fe;
+
+    color: #075985;
+
+    padding: 3px 8px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+
+/* ==================================================
+                    DATOS
+================================================== */
+
+.dato {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.dato:last-child {
+    border-bottom: none;
+}
+
+.dato > i {
+    font-size: 28px;
+    color: #0ea5e9;
+}
+
+.dato div {
+    display: flex;
+    flex-direction: column;
+}
+
+.dato strong {
+    color: #075985;
+}
+
+.dato small {
+    color: #888;
+}
+
+
+/* ==================================================
+                    TAGS
+================================================== */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background: #edf5fa;
+
+    color: #075985;
+
+    padding: 7px 12px;
+
+    border-radius: 3px;
+
+    font-size: 12px;
+}
+
+
+/* ==================================================
+                    FOOTER
+================================================== */
+
+.footer-blog {
+    background: #12304a;
+
+    color: white;
+
+    padding: 45px 0;
+
+    margin-top: 20px;
+}
+
+.footer-blog h4 {
+    color: #38bdf8;
+}
+
+.footer-blog p {
+    color: #cbd5e1;
+}
+
+
+/* ==================================================
+                    RESPONSIVE
+================================================== */
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        position: static;
+    }
+
+    .redes {
+        margin-top: 20px;
+        text-align: left !important;
+    }
+
+    .post-principal .post-imagen {
+        height: 350px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    main {
+        padding: 25px 0;
+    }
+
+    .header-blog {
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .descripcion-blog {
+        margin-left: 0;
+    }
+
+    .redes {
+        text-align: center !important;
+    }
+
+    .menu-blog .nav-link {
+        padding: 12px !important;
+    }
+
+    .post-imagen,
+    .post-principal .post-imagen {
+        height: 250px;
+    }
+
+    .post-contenido {
+        padding: 25px 20px;
+    }
+
+    .post-contenido h1 {
+        font-size: 30px;
+    }
+
+    .post-contenido h2 {
+        font-size: 25px;
+    }
+
+    .datos-post {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .conexion {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .conexion b {
+        display: none;
+    }
+
+    .conexion div {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+}
